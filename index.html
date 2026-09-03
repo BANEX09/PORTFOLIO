@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nwadike  Michael— Front-End Developer</title>
+  <meta name="description"
+    content="Michael Nwadike is a front-end developer in Lagos, Nigeria, hand-coding fast, responsive websites from scratch — landing pages, portfolios and small business sites.">
+  <meta name="author" content="Michael Nwadike">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Michael Nwadike — Front-End Developer">
+  <meta property="og:description"
+    content="Hand-coded, responsive websites built from scratch. Based in Lagos, working anywhere.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0E1226" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#EDF0F7" media="(prefers-color-scheme: light)">
+
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' rx='8' fill='%230E1226'/%3E%3Cpath d='M11 22V10l10 12V10' stroke='%234C7DF0' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#work">Skip to work</a>
+
+  <!-- ===== HEADER ===== -->
+  <!-- Mobile menu is driven by :target + :has() — no JavaScript anywhere on this page -->
+
+  <header class="site-header" id="site-header">
+    <div class="site-header__inner">
+
+      <a class="brand" href="#top" aria-label="Michael Nwadike — home">
+        <svg class="brand__mark" width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="1.25" y="1.25" width="29.5" height="29.5" rx="8.5" stroke="currentColor" stroke-width="1.5"
+            opacity="0.45" />
+          <path d="M11 22V10l10 12V10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+
+        <span class="brand__chrome">
+          <span class="dot dot--a"></span>
+          <span class="dot dot--b"></span>
+          <span class="dot dot--c"></span>
+          <span class="brand__url">Nwadike Michael</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav__cta">Get in touch</a>
+      </nav>
+
+      <div class="header__tools">
+
+        <a class="icon-btn nav__burger nav__burger--open" href="#mobile-nav">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <span class="sr-only">Open menu</span>
+        </a>
+
+        <a class="icon-btn nav__burger nav__burger--close" href="#top">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+          <span class="sr-only">Close menu</span>
+        </a>
+
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="#contact">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="shell">
+
+        <p class="eyebrow reveal"> Nwadike Michael - Front-end developer · Lagos, Nigeria</p>
+
+        <h1 class="hero__title reveal">
+          I build websites that <span class="mark">work as well as they look</span>.
+        </h1>
+
+        <p class="hero__sub reveal">
+          Hand-coded, responsive front-ends built from scratch — no page builders, no bloated
+          templates. Landing pages, portfolios and business sites that load fast and hold up
+          on every screen.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="#work" class="btn btn--primary">
+            View my work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+
+          <a href="#contact" class="btn btn--ghost">Start a project</a>
+        </div>
+
+        <ul class="hero__facts reveal" role="list">
+          <li>
+            <span class="hero__facts-k">01</span>
+            <span class="hero__facts-v">Hand-coded HTML &amp; CSS</span>
+          </li>
+
+          <li>
+            <span class="hero__facts-k">02</span>
+            <span class="hero__facts-v">Built to suit your taste</span>
+          </li>
+
+          <li>
+            <span class="hero__facts-k">03</span>
+            <span class="hero__facts-v">Available for freelance work</span>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== WORK ===== -->
+    <section id="work" class="work">
+      <div class="shell">
+
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Three builds, start to finish</h2>
+
+          <p class="section-head__note">
+            Every one of these was written by hand. Screenshots link straight to the live build.
+          </p>
+        </div>
+
+        <!-- Featured -->
+        <article class="feature reveal">
+
+          <a class="feature__media" href="https://nexus-ivory-five-64.vercel.app/" target="_blank"
+            rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+
+            <img src="assets/nexus.webp" width="1000" height="625" alt="" loading="eager" decoding="async">
+          </a>
+
+          <div class="feature__body">
+            <p class="tagline">Landing page · 2026</p>
+            <h3>Nexus</h3>
+
+            <p>
+              A modern, responsive landing page for an AI startup — dark gradient hero, logo trust
+              strip, feature grid and FAQ. Built to sit comfortably next to real funded-startup sites.
+            </p>
+
+            <ul class="chips" role="list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Responsive</li>
+              <li>Deployed on Vercel</li>
+            </ul>
+
+            <a class="link-arrow" href="https://nexus-ivory-five-64.vercel.app/" target="_blank"
+              rel="noopener noreferrer">
+
+              Visit the live Nexus landing page
+
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7M9 7h8v8" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <div class="work__grid">
+
+          <article class="project reveal">
+
+            <a class="project__media" href="https://netflix-psi-tan.vercel.app/" target="_blank"
+              rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+
+              <img src="assets/netflix.webp" width="1000" height="625" alt="" loading="lazy" decoding="async">
+            </a>
+
+            <div class="project__body">
+              <p class="tagline">Interface rebuild</p>
+              <h3>Netflix clone</h3>
+
+              <p>
+                A pixel-close rebuild of the Netflix signup screen — layered hero artwork, gradient
+                scrim, email capture and the full responsive breakdown.
+              </p>
+
+              <ul class="chips" role="list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Flexbox</li>
+              </ul>
+
+              <a class="link-arrow" href="https://netflix-psi-tan.vercel.app/" target="_blank"
+                rel="noopener noreferrer">
+
+                Visit the live Netflix rebuild
+
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <a class="project__media" href="https://netflix-psi-tan.vercel.app/" target="_blank"
+              rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+
+              <img src="./ckc gate.jpg" width="1000" height="625" alt="" loading="lazy" decoding="async">
+            </a>
+
+
+
+
+            <div class="project__body">
+              <p class="tagline">Client build · Education</p>
+              <h3>CKC Onitsha</h3>
+
+              <p>
+                A clean, straightforward website for a local secondary school — history, admissions
+                and contact information laid out so parents can find what they need in one scroll.
+              </p>
+
+              <ul class="chips" role="list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Client work</li>
+              </ul>
+
+              <a class="link-arrow" href="https://netflix-psi-tan.vercel.app/" target="_blank"
+                rel="noopener noreferrer">
+
+                Visit the live website
+
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </a>
+            </div>
+
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== APPROACH ===== -->
+    <section id="approach" class="approach">
+      <div class="shell">
+
+        <div class="section-head reveal">
+          <p class="eyebrow">Approach</p>
+          <h2>How I work</h2>
+        </div>
+
+        <ol class="principles" role="list">
+
+          <li class="reveal">
+            <span class="principles__num">01</span>
+            <p class="principles__text">
+              Good code is a courtesy to the next person who reads it — including future me.
+            </p>
+            <p class="principles__by">Clean, commented, no mystery CSS</p>
+          </li>
+
+          <li class="reveal">
+            <span class="principles__num">02</span>
+            <p class="principles__text">
+              Design gets the first look. Function earns the second visit.
+            </p>
+            <p class="principles__by">Built for people, not for screenshots</p>
+          </li>
+
+          <li class="reveal">
+            <span class="principles__num">03</span>
+            <p class="principles__text">
+              I'd rather ship something small and solid than something big and shaky.
+            </p>
+            <p class="principles__by">Scope honestly, finish properly</p>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about">
+
+      <div class="shell about__inner">
+
+        <div class="about__side reveal">
+
+          <div class="about__photo">
+            <img src="./image.png" alt="Michael Nwadike" width="600" height="600"
+              style="width:100%;height:100%;object-fit:cover;border-radius:inherit">
+          </div>
+
+          <dl class="specs">
+
+            <div>
+              <dt>Based in</dt>
+              <dd>Ikeja, Lagos — NG</dd>
+            </div>
+
+            <div>
+              <dt>Currently</dt>
+              <dd>Freelance &amp; open to work</dd>
+            </div>
+
+            <div>
+              <dt>Working with</dt>
+              <dd>HTML, CSS, Git</dd>
+            </div>
+
+            <div>
+              <dt>Learning next</dt>
+              <dd>JavaScript depth, React</dd>
+            </div>
+
+          </dl>
+        </div>
+
+        <div class="about__main reveal">
+
+          <p class="eyebrow">About</p>
+          <h2>A bit about me</h2>
+
+          <p class="lead">
+            I'm Michael — a front-end developer who got here by rebuilding the interfaces
+            I admired until I understood exactly why they worked.
+          </p>
+
+          <p>
+            That's still how I learn. I picked apart Netflix's signup flow and a startup landing page
+            line by line, then rebuilt both from an empty file. Nothing dragged in, nothing copied —
+            just HTML and CSS until the layout held at every width.
+          </p>
+
+          <p>
+            Today I build sites for people who need something real on the internet: a landing page
+            that converts, a school site parents can actually navigate, a portfolio that looks like
+            its owner cares. I'm deep in JavaScript now and heading toward React next.
+          </p>
+
+          <h3 class="about__sub">What I can do for you</h3>
+
+          <div class="services">
+
+            <article class="card">
+              <span class="card__tag">01</span>
+              <h4>New builds</h4>
+              <p>Landing pages, portfolios and business sites, hand-coded and deployed.</p>
+            </article>
+
+            <article class="card">
+              <span class="card__tag">02</span>
+              <h4>Interface rebuilds</h4>
+              <p>Give me a design, a screenshot or a URL and I'll rebuild it faithfully in clean code.</p>
+            </article>
+
+            <article class="card">
+              <span class="card__tag">03</span>
+              <h4>Responsive fixes</h4>
+              <p>Site breaking on mobile? I'll find what's collapsing and make it hold at every width.</p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact">
+
+      <div class="shell">
+
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something</h2>
+
+          <p class="section-head__note">
+            Got a project, a rough idea, or a site that needs rescuing? Pick whichever is easiest —
+            I reply within a day.
+          </p>
+        </div>
+
+        <div class="contact__cards reveal">
+
+          <a class="contact-card" href="mailto:kaosinwadike@gmail.com">
+
+            <span class="contact-card__icon">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
+            </span>
+
+            <span class="contact-card__label">Email</span>
+            <span class="contact-card__value">kaosinwadike@gmail.com</span>
+            <span class="contact-card__meta">Best for briefs and files</span>
+
+          </a>
+
+          <a class="contact-card" href="https://wa.me/2349034196509" target="_blank" rel="noopener noreferrer">
+
+            <span class="contact-card__icon">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.6-4.9A8.5 8.5 0 1 1 21 11.5Z" />
+                <path d="M8.8 9.2c0 3 2.4 5.4 5.4 5.4" />
+              </svg>
+            </span>
+
+            <span class="contact-card__label">WhatsApp</span>
+            <span class="contact-card__value">+234 903 419 6509</span>
+            <span class="contact-card__meta">Fastest reply</span>
+
+          </a>
+
+          <a class="contact-card" href="tel:+2349034196509">
+
+            <span class="contact-card__icon">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5Z" />
+              </svg>
+            </span>
+
+            <span class="contact-card__label">Phone</span>
+            <span class="contact-card__value">+234 903 419 6509</span>
+            <span class="contact-card__meta">Available 24/7</span>
+
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+
+    <div class="shell site-footer__inner">
+
+      <div class="site-footer__brand">
+
+        <svg width="34" height="34" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="1.25" y="1.25" width="29.5" height="29.5" rx="8.5" stroke="currentColor" stroke-width="1.5"
+            opacity="0.4" />
+          <path d="M11 22V10l10 12V10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+
+        <p class="site-footer__name">Nwadike Michael</p>
+        <p class="site-footer__role">Front-end developer, Lagos</p>
+
+        <p class="status-pill">
+          <span class="status-pill__dot" aria-hidden="true"></span>
+          Available for freelance work
+        </p>
+
+      </div>
+
+      <div class="site-footer__links">
+
+        <p class="site-footer__heading">Elsewhere</p>
+
+        <ul role="list">
+          <li>
+            <a href="https://github.com/BANEX09" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/hoes_luvmk/" target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61593776032972" target="_blank" rel="noopener noreferrer">
+              Facebook
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="site-footer__links">
+
+        <p class="site-footer__heading">Site</p>
+
+        <ul role="list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="shell site-footer__base">
+      <p>© 2026 Nwadike Michael</p>
+      <p class="site-footer__built">Hand-coded with HTML &amp; CSS</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
